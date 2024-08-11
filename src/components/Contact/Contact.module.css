@@ -1,0 +1,22 @@
+.contactItem {
+  min-width: 250px;
+  border-radius: 8px;
+  border: 3px solid rgb(160, 100, 140);
+  padding: 8px;
+  box-shadow: 0 0 2px 2px rgb(160, 100, 140);
+  & div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 25px;
+  }
+  & button {
+    width: 100px;
+    margin: 0 auto;
+    border: 3px solid rgb(160, 100, 140);
+    border-radius: 8px;
+    background-color: rgb(226, 177, 213);
+    padding: 5px 12px;
+    font-size: 16px;
+  }
+}

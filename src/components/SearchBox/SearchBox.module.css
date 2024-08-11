@@ -1,0 +1,16 @@
+.searchBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  & label {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  & input {
+    border-radius: 8px;
+    outline: none;
+    border: 3px solid rgb(160, 100, 140);
+    padding: 8px;
+  }
+}
