@@ -3,12 +3,13 @@ import ContactForm from "../ContactForm/ContactForm";
 import ContactList from "../ContactList/ContactList";
 import SearchBox from "../SearchBox/SearchBox";
 import s from "./App.module.css";
-import { selectIsLoading } from "../../redux/selectors";
+import { selectIsError, selectIsLoading } from "../../redux/selectors";
 import { useEffect } from "react";
 import { fetchContactsThunk } from "../../redux/contactsOps";
 
 function App() {
   const isLoading = useSelector(selectIsLoading);
+  const isError = useSelector(selectIsError);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
         <SearchBox />
         <ContactList />
         {isLoading && <p>Loading...</p>}
+        {isError && <p>Something went wrong!</p>}
       </div>
     </>
   );
