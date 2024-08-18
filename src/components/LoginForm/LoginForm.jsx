@@ -1,5 +1,4 @@
 import { Field, Form, Formik } from "formik";
-import { Link } from "react-router-dom";
 
 export default function LoginForm() {
   const initialValues = {
@@ -22,9 +21,6 @@ export default function LoginForm() {
             placeholder="Enter your password"
           ></Field>
           <button type="submit">Login</button>
-          <p>
-            You don't have account?<Link to="/register">Sing up</Link>
-          </p>
         </Form>
       </Formik>
     </div>

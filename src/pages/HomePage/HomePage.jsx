@@ -1,3 +1,3 @@
 export default function HomePage() {
-  return <div>HomePage</div>;
+  return <p>Phonebook app welcome page</p>;
 }
