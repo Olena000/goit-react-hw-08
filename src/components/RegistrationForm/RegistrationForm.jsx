@@ -26,7 +26,7 @@ export default function RegistrationForm() {
             type="password"
             placeholder="Enter your password"
           ></Field>
-          <button type="submit">Registration</button>
+          <button type="submit">Register</button>
         </Form>
       </Formik>
     </div>
