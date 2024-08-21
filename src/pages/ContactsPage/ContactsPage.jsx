@@ -1,13 +1,13 @@
 import { useDispatch, useSelector } from "react-redux";
 import { selectIsError, selectIsLoading } from "../../redux/selectors";
 import { useEffect } from "react";
-import { fetchContactsThunk } from "../../redux/contactsOps";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import SearchBox from "../../components/SearchBox/SearchBox";
 import ContactList from "../../components/ContactList/ContactList";
 import s from "./ContactsPage.module.css";
 import { FaAddressBook } from "react-icons/fa";
 import Loader from "../../components/Loader/Loader";
+import { fetchContactsThunk } from "../../redux/contacts/operations";
 
 export default function ContactsPage() {
   const isLoading = useSelector(selectIsLoading);

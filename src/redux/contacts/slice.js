@@ -1,10 +1,10 @@
 import { createSlice, isAnyOf } from "@reduxjs/toolkit";
+import { logoutThunk } from "../auth/operations";
 import {
   addContactThunk,
   deleteContactThunk,
   fetchContactsThunk,
-} from "../contactsOps";
-import { logoutThunk } from "../auth/operations";
+} from "./operations";
 
 const initialState = {
   items: [],
