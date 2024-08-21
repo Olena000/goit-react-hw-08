@@ -6,9 +6,11 @@
   box-shadow: 0 0 2px 2px rgb(160, 100, 140);
   & div {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 5px;
     margin-bottom: 25px;
+    margin-top: 10px;
   }
   & button {
     width: 100px;
@@ -18,5 +20,17 @@
     background-color: rgb(226, 177, 213);
     padding: 5px 12px;
     font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
   }
+}
+
+button:hover {
+  background-color: rgb(160, 100, 140);
+}
+
+.icon {
+  color: rgb(69, 44, 62);
+  margin-right: 10px;
+  margin-left: 10px;
 }

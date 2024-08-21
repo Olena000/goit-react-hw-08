@@ -6,6 +6,8 @@ import ContactForm from "../../components/ContactForm/ContactForm";
 import SearchBox from "../../components/SearchBox/SearchBox";
 import ContactList from "../../components/ContactList/ContactList";
 import s from "./ContactsPage.module.css";
+import { FaAddressBook } from "react-icons/fa";
+import Loader from "../../components/Loader/Loader";
 
 export default function ContactsPage() {
   const isLoading = useSelector(selectIsLoading);
@@ -18,11 +20,14 @@ export default function ContactsPage() {
 
   return (
     <div className={s.formWrapper}>
-      <h1 className={s.title}>Phonebook</h1>
+      <h1 className={s.title}>
+        <FaAddressBook className={s.icon} />
+        Phonebook
+      </h1>
       <ContactForm />
       <SearchBox />
       <ContactList />
-      {isLoading && <p>Loading...</p>}
+      {isLoading && <Loader />}
       {isError && <p>Something went wrong!</p>}
     </div>
   );

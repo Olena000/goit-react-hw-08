@@ -1,0 +1,11 @@
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.link {
+  color: rgb(160, 100, 140);
+  text-decoration-line: underline;
+}

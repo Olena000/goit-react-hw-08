@@ -9,5 +9,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 15px;
   margin-bottom: 20px;
+}
+
+.icon {
+  color: rgb(69, 44, 62);
 }

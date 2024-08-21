@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .form {
@@ -27,24 +28,9 @@ button:hover {
   background-color: rgb(160, 100, 140);
 }
 
-.label {
-  display: flex;
-  gap: 5px;
-  flex-direction: column;
-  & span {
-    font-weight: bold;
-  }
-}
-
 .input {
   border-radius: 8px;
   outline: none;
   border: 3px solid rgb(160, 100, 140);
   padding: 8px;
-}
-
-.error {
-  color: red;
-  font-size: 14px;
-  font-weight: bold;
 }

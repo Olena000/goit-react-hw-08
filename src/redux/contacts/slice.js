@@ -3,8 +3,8 @@ import {
   addContactThunk,
   deleteContactThunk,
   fetchContactsThunk,
-} from "./contactsOps";
-import { logoutThunk } from "./auth/operations";
+} from "../contactsOps";
+import { logoutThunk } from "../auth/operations";
 
 const initialState = {
   items: [],

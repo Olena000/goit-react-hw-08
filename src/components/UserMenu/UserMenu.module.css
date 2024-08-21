@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 30px;
+  right: 70px;
+}
+
+.userName {
+  font-weight: bold;
+  margin-right: 120px;
+}
+
+button {
+  color: rgb(69, 44, 62);
+  width: 140px;
+  margin: 10px auto 0;
+  font-weight: 700;
+  border: 3px solid rgb(160, 100, 140);
+  border-radius: 8px;
+  background-color: rgb(226, 177, 213);
+  padding: 5px 12px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(160, 100, 140);
+}
