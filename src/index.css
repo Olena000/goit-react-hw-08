@@ -51,3 +51,9 @@ img {
   height: auto;
   object-fit: cover;
 }
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
