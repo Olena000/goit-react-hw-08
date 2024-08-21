@@ -1,10 +1,6 @@
 .wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
-  position: absolute;
-  top: 30px;
-  right: 70px;
 }
 
 .userName {

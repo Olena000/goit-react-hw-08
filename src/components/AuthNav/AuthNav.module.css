@@ -2,10 +2,6 @@
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-bottom: 30px;
-  position: absolute;
-  top: 30px;
-  right: 70px;
 }
 
 .link {
